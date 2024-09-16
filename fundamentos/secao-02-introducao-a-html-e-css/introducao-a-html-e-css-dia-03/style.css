@@ -1,0 +1,35 @@
+h1 {
+    color: orange;
+    font-size: 2em;
+}
+
+body {
+    background-color: rgb(255, 400, 200);
+    font-size: 20px;
+}
+
+#color-especific {
+    background-color: paleturquoise;
+}
+
+#color {
+    background-color: crimson
+}
+
+#Koenigsegg1 {
+    background-color: blueviolet;
+}
+
+.style-lista {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-family: cursive;
+}
