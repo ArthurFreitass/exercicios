@@ -1,1 +1,1 @@
-$ Diretório usado �para aprendizado em HTML
+$ Diretório usado �para aprendizado em HTML e CSS
