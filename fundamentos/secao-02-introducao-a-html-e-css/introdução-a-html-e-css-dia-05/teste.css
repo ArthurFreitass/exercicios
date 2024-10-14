@@ -1,0 +1,46 @@
+.gojo {
+    color: purple;
+}
+
+.sukuna {
+    color: red;
+}
+
+.image {
+    position: absolute;
+    width: 450px;
+    top: 20px;
+    z-index: 1;
+    height: 350px;
+}
+
+#x1 {
+    position: absolute;
+    width: 250px;
+    left: 100px;
+    z-index: 2;
+    top: 80px;
+}
+
+#fortes {
+    position: absolute;
+    z-index: 3;
+    left: 40px;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+p {
+    position: absolute;
+    top: 400px;
+    font-size: 20px;
+    z-index: 4;
+}
+
+.honrados {
+    width: 50px;
+    float: left;
+    margin-right: 30px;
+}
