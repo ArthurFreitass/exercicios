@@ -1,0 +1,46 @@
+body {
+    color: rgb(60, 99, 99);
+    font-size: 20px;
+}
+
+#burguesinha {
+    width: 450px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+}
+
+#cr7 {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 2;
+}
+
+
+#gojo {
+    position: absolute;
+    width: 100px;
+    top: -25px;
+    left: 135px;
+    z-index: 3;
+}
+
+h1 {
+    position: absolute;
+    z-index: 4;
+    left: 30px;
+}
+
+#msc {
+    position: absolute;
+    z-index: 5;
+    top: 300px;
+}
+
+.lua {
+    float: left;
+    margin-right: 10px;
+}
