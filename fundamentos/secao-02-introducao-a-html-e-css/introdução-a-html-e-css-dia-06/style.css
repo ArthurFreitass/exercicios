@@ -1,0 +1,23 @@
+h1 {
+    border: 2px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, div {
+    font-family: monospace;
+    font-size: 20px;
+    color: blue;
+}
+
+/* Com a vírgula, (,) usando o agrupamento de seletores. */
+
+li:hover {
+    background-color: red;
+}
+
+/* Aplicando o hover e active na pseudoclasse */
+
+li:active {
+    color: whitesmoke;
+    font-size: 20px;
+}
