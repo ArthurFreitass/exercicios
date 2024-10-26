@@ -13,6 +13,7 @@ p, div {
 
 li:hover {
     background-color: red;
+    transition: 1s;
 }
 
 /* Aplicando o hover e active na pseudoclasse */
