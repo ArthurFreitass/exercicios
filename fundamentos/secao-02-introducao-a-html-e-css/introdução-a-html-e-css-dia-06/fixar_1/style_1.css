@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: orange;
+}
+
+li:active {
+    font-size: 20px;
+}
+
+ol, ul {
+    list-style: none;
+}
