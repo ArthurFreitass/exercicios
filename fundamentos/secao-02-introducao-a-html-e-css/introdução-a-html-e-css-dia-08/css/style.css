@@ -1,0 +1,29 @@
+
+header h1, h2 {
+    background-color: darkcyan;
+    width: 600px;
+    height: 100px;
+    border: 5px rgb(196, 55, 83) solid;
+    border-radius: 5px;
+    color: darkred;
+    display: inline;
+}
+
+#a2 {
+    background-color: rgb(29, 117, 29);
+    color: rgb(190, 190, 69);
+    margin-left: 60px;
+}
+
+#section-p p{
+    display: inline;
+    font-size: 20px;
+}
+
+#float {
+    float: inline-start;
+    width: 150px;
+    margin-right: 10px;
+}
+/* Basicamente ali temos dois elementos que são em block - logo deveriam ficar um abaixo do outro, que tiveram seu valor de display alterado para inline */
+/* Quando o valor deles foi alterado para inline, as propriedades de altura e largura pararam de valer e além disso ficaram um ao lado do outro */
