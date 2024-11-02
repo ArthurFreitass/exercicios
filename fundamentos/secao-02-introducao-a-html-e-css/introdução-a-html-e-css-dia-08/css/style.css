@@ -25,3 +25,14 @@ h1, h1 {
 }
 /* Basicamente ali temos dois elementos que são em block - logo deveriam ficar um abaixo do outro, que tiveram seu valor de display alterado para inline */
 /* Quando o valor deles foi alterado para inline, as propriedades de altura e largura pararam de valer e além disso ficaram um ao lado do outro */
+
+section ul {
+    background-color: purple
+}
+
+section ul li {
+    display: inline-block;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+}
