@@ -1,5 +1,4 @@
-
-header h1, h2 {
+h1, h1 {
     background-color: darkcyan;
     width: 600px;
     height: 100px;
@@ -11,8 +10,7 @@ header h1, h2 {
 
 #a2 {
     background-color: rgb(29, 117, 29);
-    color: rgb(190, 190, 69);
-    margin-left: 60px;
+    color: rgb(190, 190, 69)
 }
 
 #section-p p{
