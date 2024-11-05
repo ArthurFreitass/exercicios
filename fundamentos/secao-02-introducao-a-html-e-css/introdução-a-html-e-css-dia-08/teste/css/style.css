@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 315px;
+}
+
+h3 {
+    padding-bottom: 15px;
+    padding-left: 2px;
+    background-color: darkgray;
+}
