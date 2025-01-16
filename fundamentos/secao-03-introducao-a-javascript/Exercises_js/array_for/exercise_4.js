@@ -1,15 +1,13 @@
-// Criando variável
+const number_ = 5;
+let simbol_ = "*";
 
-let numberUser_ = 5;
-let linhas;
-// Loop de repetição
+if (number_ > 1) {
+  for (let index = 1; index <= number_; index += 1) {
+    let linha = "";
 
-if (numberUser_ > 1) {
-  for (let index = 1; index <= numberUser_; index += 1) {
-    linhas = "";
-    for (let i = 1; i <= numberUser_; i += 1) {
-      linhas += "*";
+    for (let i = 0; i < index; i += 1) {
+      linha += simbol_;
     }
-    console.log(linhas);
+    console.log(linha);
   }
 }
