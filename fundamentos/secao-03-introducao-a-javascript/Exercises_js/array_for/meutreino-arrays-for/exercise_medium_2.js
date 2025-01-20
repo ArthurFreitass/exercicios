@@ -2,7 +2,7 @@
 
 const message = "Vamos viver e cantar";
 
-let message_Array = message.split("");
+let message_Array = message.split("").;
 
 let vowel_Counter = 0;
 
