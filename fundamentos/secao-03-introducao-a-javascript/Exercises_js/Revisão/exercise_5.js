@@ -1,12 +1,12 @@
-// Soma dos primos de 1 a 100
-function VerificaPrimo(number) {
+// Criar um algoritmo que diga a soma dos primos de 1 a N primeiros números primos;
+
+function VerificaPrimos(number_) {
   let result = true;
-  if (number <= 1) {
+  if (number_ <= 1) {
     result = false;
-    return result;
   } else {
-    for (let index = 2; index < number; index += 1) {
-      if (number % index == 0) {
+    for (let index = 2; index < number_; index += 1) {
+      if (number_ % index == 0) {
         result = false;
         break;
       }
@@ -18,7 +18,7 @@ function VerificaPrimo(number) {
 function SomaPrimos(number) {
   let sum = 0;
   for (let index = 2; index < number; index += 1) {
-    if (VerificaPrimo(index)) {
+    if (VerificaPrimos(index)) {
       sum += index;
     }
   }
