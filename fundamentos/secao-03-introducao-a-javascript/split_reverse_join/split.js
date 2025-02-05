@@ -6,6 +6,6 @@ let newMessage = message.split(",").reverse();
 
 // O split separou cada elemento antes e depois da vírgula como um array, e o join, marcou a vírgula com um _
 
-console.log(newMessage[2]);
+console.log(newMessage);
 
 // Transformou a string em um array
