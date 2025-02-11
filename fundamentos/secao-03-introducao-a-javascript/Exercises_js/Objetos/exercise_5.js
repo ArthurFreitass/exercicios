@@ -26,15 +26,13 @@ const school = {
   ],
 };
 
-console.log(school);
-
-function CheckKey(array, nomeChave) {
+function AlterarTurno(array, curso, valor) {
   for (let index = 0; index < array.length; index += 1) {
-    if (array[index][nomeChave] !== undefined) {
-      return true;
+    if (array[index].course === curso) {
+      array[index].shift = valor;
     }
   }
-  return false;
+  return array[0];
 }
 
-console.log(CheckKey(school.lessons, "LUCAS"));
+console.log(AlterarTurno(school.lessons, "Python", "Noite"));
