@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(187, 59, 84);
+}
+
+p {
+    display: inline-block;
+    width: 300px;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: grey;
+    height: 30%;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+}
