@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diferença entre innerT e InerH</title>
+  </head>
+  <body>
+    <div id="parent"></div>
+    <script>
+      // Criando dois novos elementos
+      const parent = document.getElementById("parent");
+      let newElement2 = document.createElement("div");
+      let newElement3 = document.createElement("div");
+
+      newElement2.innerText = "Um texto sem marcação HTML";
+      newElement3.innerHTML = "<b>Um texto com marcação HTML</b>";
+
+      parent.appendChild(newElement2);
+      parent.appendChild(newElement3);
+    </script>
+  </body>
+</html>
