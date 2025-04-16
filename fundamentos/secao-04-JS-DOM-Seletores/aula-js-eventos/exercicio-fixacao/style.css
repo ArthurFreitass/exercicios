@@ -1,1 +1,63 @@
-/* Consertar o CSS depois*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
+}
+
+header h1 {
+  text-align: justify;
+}
+
+main {
+  text-align: center;
+}
+
+main #my-top {
+  text-align: center;
+  font-size: 30px;
+}
+
+main ul li{
+  list-style: none;
+}
+
+
+main #first-li {
+  background-color: red;
+  width: 200px;
+  height: auto;
+  font-size: large;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto
+}
+
+main #second-li {
+  background-color: green;
+  width: 200px;
+  height: auto;
+  font-size: large;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+main #third-li {
+  background-color: blue;
+  width: 200px;
+  height: auto;
+  padding: 30px;
+  font-size: large;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input {
+  height: 50px;
+  width: 180px;
+  border: none;
+  outline: none;
+}
