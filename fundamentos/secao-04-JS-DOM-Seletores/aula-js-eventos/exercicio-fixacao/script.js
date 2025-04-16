@@ -41,7 +41,7 @@ function Redireciona() {
 
 myWebpage.addEventListener("mouseover", Mousecima);
 function Mousecima() {
-  myWebpage.style.color = "red";
+  myWebpage.style.color = "crimson";
 }
 
 const resetText = (event) => {
