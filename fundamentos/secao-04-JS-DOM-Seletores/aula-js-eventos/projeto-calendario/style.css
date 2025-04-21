@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.main h1 {
+    margin-left: 0.07%;
+    background-color: #03346E;
+    color: white;
+    padding: 0.2em;
+}
+
+.main h3 {
+    margin-top: 3%;
+    margin-left: 0.10;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+#seção-dias {
+    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-dias {
+    font-size: 2em;
+    background-color: transparent;
+    display: inline-block;
+    width: 14.28%;
+    padding: 0.4em;
+    border: rgb(221, 221, 221) solid 0.5px;
+    border-radius: 1px;
+}
+
+.dia-real {
+    display: inline-block;
+    width: 14.28%;
+    background-color: #03346E;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+
+aside p {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding: 20px 0;
+}
