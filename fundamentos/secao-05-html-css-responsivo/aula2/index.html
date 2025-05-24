@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms - 2</title>
+  </head>
+
+  <body>
+    <h1>Formulário</h1>
+    <form action="" method="get">
+      <!--Explica o input-->
+      <label for="input-text">Digite qualquer coisa:</label>
+      <!--Diferenças de tipo do campo input-->
+      <input
+        type="text"
+        name="Texto"
+        placeholder="Digite qualquer coisa:"
+        required
+        class=""
+        value=""
+        id="input-text"
+      />
+      <br /><br />
+      <!--Usando textarea-->
+      <label for="textarea-input">Digite uma frase:</label>
+      <br />
+      <textarea name="TextoColunas" id="textarea-input" cols="5" rows="5">
+Texto valor</textarea
+      >
+      <br /><br />
+      <!--Input do estilo checkbox-->
+      <input
+        type="checkbox"
+        id="jogador-1"
+        name="input-checkbox"
+        checked
+      />Cristiano Ronaldo
+      <input type="checkbox" id="jogador-2" name="input-checkbox" />Messi
+      <input type="checkbox" id="jogador-3" name="input-checkbox" />Neymar
+      <br /><br />
+      <!--Input do estilo radio-->
+      <!--Colocando dentro de uma label-->
+      <label for="psg"
+        ><input
+          type="radio"
+          name="input-radio"
+          id="psg"
+          value="Paris"
+        />PSG</label
+      >
+      <label for="real"
+        ><input
+          type="radio"
+          name="input-radio"
+          id="real"
+          value="Real"
+        />Real</label
+      >
+      <label for="barça"
+        ><input
+          type="radio"
+          name="name-diferente"
+          id="barça"
+          value="Barça"
+        />Barça</label
+      >
+      <br /><br />
+      <!--Utilizando select-->
+      <select name="carros" id="estados">
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
+      <br /><br />
+      <!--Senha-->
+      <label for="password">
+        Digite a senha:
+        <input type="password" id="password" />
+      </label>
+      <br /><br />
+      <!--Enviar arquivo-->
+      <input type="file" name="file-arquivo" id="arquive" />
+      <button type="submit">Enviar tudo</button>
+    </form>
+  </body>
+</html>
