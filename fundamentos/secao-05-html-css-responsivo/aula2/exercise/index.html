@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+  </head>
+  <body>
+    <!--INSTRUÇÕES
+    Adicione os campos de entrada para e-mail e senha.
+    Adicione um checkbox com o texto “Lembre-me”.
+    Adicione um botão com o texto “Entrar”.
+    Adicione os placeholder “Digite seu e-mail“ e “Digite sua senha” para os campos de e-mail e senha.
+    Adicione o atributo required para os campos de e-mail e senha.
+    Adicione o atributo autocomplete="off" para o campo de e-mail.
+    Adicione o atributo autofocus para o campo de e-mail.
+    -->
+    <h1>Página inicial</h1>
+    <form action="" method="get">
+      <label for="input-email">Digite seu e-mail:</label>
+      <input
+        type="email"
+        name="email"
+        id="input-email"
+        placeholder="Digite seu e-mail"
+        required
+        autocomplete="off"
+        autofocus
+      />
+      <br /><br />
+      <label for="input-password">Digite sua senha:</label>
+      <input
+        type="password"
+        name="password"
+        id="input-password"
+        placeholder="Digite sua senha"
+        required
+      />
+      <br /><br />
+      <label for="input-checkbox">
+        Lembrar-me
+        <input type="checkbox" name="checkbox" id="input-checkbox" />
+      </label>
+      <button type="submit">Entrar</button>
+    </form>
+  </body>
+</html>
