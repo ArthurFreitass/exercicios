@@ -1,0 +1,89 @@
+<!--Criando um formulário completo-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!--INSTRUÇÕES
+    Crie um formulário com os seguintes campos:
+    Nome completo
+    E-mail
+    Senha
+    Data de nascimento
+    Gênero (masculino, feminino ou outro) → usando radio buttons
+    Aceitar termos e condições → usando checkbox
+    Adicione:
+    Placeholders nos campos de nome, e-mail e senha.
+    O atributo required em todos os campos, exceto na data de nascimento (opcional).
+    O atributo autocomplete="off" no campo de e-mail.
+    O atributo autofocus no campo de nome.
+    Crie o vínculo correto entre os <label> e os <input>.
+    Adicione um botão escrito "Cadastrar".-->
+    <h1>FORMULÁRIO</h1>
+    <form action="" method="get">
+      <label for="input-name">
+        <p>Digite seu nome completo:</p>
+        <input
+          type="text"
+          id="input-name"
+          name="name-complete"
+          required
+          placeholder="Seu nome"
+          autofocus
+        />
+      </label>
+      <label for="input-email">
+        <p>Digite seu e-mail:</p>
+        <input
+          type="email"
+          name="email"
+          id="input-email"
+          required
+          placeholder="Seu e-mail:"
+          autocomplete="off"
+        />
+      </label>
+      <label for="input-password">
+        <p>Digite sua senha:</p>
+        <input
+          type="password"
+          name="password"
+          id="input-password"
+          required
+          placeholder="Sua senha:"
+        />
+      </label>
+      <label for="input-date">
+        <p>Sua data de nascimento:</p>
+        <input type="date" name="date-birth" id="input-date" />
+      </label>
+      <br />
+      <br />
+      <p>Escolha seu genêro:</p>
+      <label for="masculine">
+        <input type="radio" name="gender" id="masculine" required />Masculino
+      </label>
+      <label for="feminine">
+        <input type="radio" name="gender" id="feminine" required />Feminino
+      </label>
+      <label for="other">
+        <input type="radio" name="gender" id="other" required />Outros
+      </label>
+      <p>Aceita termos e condições?</p>
+      <label for="input-check-yes">
+        <input
+          type="checkbox"
+          name="yes"
+          id="input-check-yes"
+          required
+          checked
+        />Sim
+      </label>
+      <br /><br />
+      <button>Cadastrar</button>
+    </form>
+  </body>
+</html>
