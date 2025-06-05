@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Viagem formulário</h1>
+    <br>
+    <form id="main-form" method="get">
+      <fieldset>
+        <div class="field">
+            <label class="label" for="fullName">Nome Completo:</label>
+            <div class="control has-icons-left has-icons-right" style="max-width: 350px;">
+            <input
+          class="input"
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Digite seu nome completo"
+          maxlength="40"
+          minlength="10"
+          required
+            />
+            <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="email" class="label">Endereço de E-mail:</label>
+            <div class="control has-icons-left has-icons-right" style="max-width: 350px;">
+        <input
+        class="input is-success"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+          maxlength="50"
+          minlength="10"
+          required
+                />
+        <!--Figuras-->
+        <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+        </span>
+            </div>
+        </div>
+        <!--p-->
+        <p class="help is-success">E-mail disponível.</p>
+        <br>
+
+        <!--Configurar rádios-->
+
+        <div class="field">
+            <label class="label">Locais:</label>
+            <div class="control">
+                <label class="radio" for="destination1">
+            <input
+          type="radio"
+          id="destination1"
+          className="radios"
+          name="destinations"
+          value="Cidade"
+          required
+        /> Cidade
+                </label>
+                <!--Nova Label-->
+                <label class="radio" for="destination2">
+                    <input
+          type="radio"
+          id="destination2"
+          className="radios"
+          name="destinations"
+          value="Campo"
+          required
+                    /> Campo
+                </label>
+                <label class="radio" for="destination3">
+                    <input
+          type="radio"
+          id="destination3"
+          className="radios"
+          name="destinations"
+          value="Praia"
+          required
+                    /> Praia
+                </label>
+                <label class="radio" for="destination4">
+        <input
+          type="radio"
+          id="destination4"
+          className="radios"
+          name="destinations"
+          value="Montanhas"
+          required
+        /> Montanhas
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="field">
+            <label class="label" for="question">
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+          do formulário.
+        </label>
+            <div class="control" style="max-width: 500px;">
+                <textarea
+          name="why"
+          class="textarea"
+          id="question"
+          cols="2"
+          rows="5"
+          placeholder="Digite sua resposta vencedora aqui"
+          maxlength="500"
+        ></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="field">
+            <label class="label" for="date"
+          >Qual a melhor data para realizar sua viagem?</label
+        >
+        <div class="control" style="max-width: 170px;">
+            <input class="input" type="date" id="date" />
+        </div>
+        <br />
+        </div>
+
+
+        <div class="field">
+            <div class="control">
+                <label class="label" for="promo">
+        <input type="checkbox" name="promo" id="promo"/>
+             Gostaria de receber outras incríveis oportunidades oferecidas pela empresa.
+        </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="control">
+                <label class="label" for="agreement">
+        <input type="checkbox" name="agreement" id="agreement" required />
+            Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+            </div>
+        </div>
+      </fieldset>
+      <br>
+      <div class="field is-grouped">
+        <div class="control">
+            <button type="submit"  class="button is-link">Enviar</button>
+        </div>
+      <div class="control">
+            <button type="reset" class="button is-link is-light">Limpar</button>
+     </div>
+    </form>
+  </body>
+</html>
