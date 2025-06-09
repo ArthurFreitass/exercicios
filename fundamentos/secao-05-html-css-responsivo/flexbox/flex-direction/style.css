@@ -1,0 +1,46 @@
+div p {
+    border: solid 3px black;
+}
+
+#block {
+    width: 300px;
+}
+
+#block, #inline-block {
+    border: solid 2px red;
+}
+
+#inline {
+    padding: 5px;
+    width: 150px;
+    border: solid 2px rgb(55, 25, 226);
+}
+
+#inline p {
+    display: inline;
+    /*width não funciona*/
+    width: 400px;
+    /*Apenas margens horizontais funcionam*/
+    margin-top: 500px;
+}
+
+#inline-block {
+    width: 300px;
+}
+
+#inline-block span {
+    display: inline-block;
+    margin: 30px;
+    width: 50px;
+}
+
+/* Agora aprendendo o display flex*/
+
+#flex {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 140px;
+    background-color: red;
+    color: white;
+}
