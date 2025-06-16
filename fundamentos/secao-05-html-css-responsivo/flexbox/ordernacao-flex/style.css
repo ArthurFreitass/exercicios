@@ -1,0 +1,33 @@
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 10px;
+}
+
+.container {
+  padding: 0px 20px;
+  border-radius: 15px;
+  background-color: rgb(114, 66, 26);
+  color: white;
+}
+
+/*Alterando a ordem*/
+
+.box-container > .container:nth-child(1) {
+  order: 2;
+}
+
+.box-container > .container:nth-child(2) {
+  order: 1;
+}
+
+.box-container > .container:nth-child(3) {
+  order: 3;
+}
+.box-container > .container:nth-child(4) {
+  order: 4;
+}
