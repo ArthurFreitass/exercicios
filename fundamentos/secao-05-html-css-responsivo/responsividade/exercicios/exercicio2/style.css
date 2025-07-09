@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Primeiro o header*/
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  width: 100%;
+  background-color: #ccc;
+  padding: 40px;
+  order: 1;
+}
+
+.aside-one,
+.aside-two {
+  border: 2px solid crimson;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.aside-one {
+  order: 3;
+}
+
+.aside-two {
+  order: 1;
+}
+
+.main-content {
+  order: 4;
+  border: 2px solid crimson;
+  padding: 20px;
+  width: 90%;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+.main-content p {
+  line-height: 2rem;
+}
+
+footer {
+  font-size: 16px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  order: 5;
+  background-color: #ccc;
+}
