@@ -1,6 +1,9 @@
+/*Base*/
+
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 html {
@@ -16,14 +19,15 @@ html {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /*Primeiro o header*/
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 19px;
 }
 
 header {
@@ -33,13 +37,13 @@ header {
   width: 100%;
   background-color: #ccc;
   padding: 40px;
+  height: 110px;
   order: 1;
 }
 
 .aside-one,
 .aside-two {
-  border: 2px solid crimson;
-  padding: 20px 40px;
+  padding: 20px 100px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -55,7 +59,7 @@ header {
 
 .main-content {
   order: 4;
-  border: 2px solid crimson;
+  border: 2px solid #aab;
   padding: 20px;
   width: 90%;
   max-width: 80ch;
@@ -73,4 +77,114 @@ footer {
   text-align: center;
   order: 5;
   background-color: #ccc;
+}
+
+/*Telas pequenas*/
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    order: 1;
+    font-size: 15px;
+  }
+
+  aside {
+    width: 100%;
+    padding: 10px 30px;
+    max-width: 50ch;
+    font-size: 14px;
+  }
+
+  .aside-one {
+    margin-top: 130px;
+    order: 2;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  aside ul li {
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    margin-top: 30px;
+    order: 3;
+    max-width: 60ch;
+  }
+
+  .aside-two {
+    margin-top: 10px;
+    order: 4;
+  }
+
+  footer {
+    margin-top: 10px;
+    order: 5;
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  footer p {
+    line-height: 1.2rem;
+  }
+}
+
+/*Telas médias*/
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    order: 1;
+  }
+
+  .aside-one {
+    border: 2px #aab solid;
+    width: 60%;
+    margin-top: 130px;
+    order: 2;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  aside ul li {
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    margin-top: 30px;
+    order: 3;
+    max-width: 75ch;
+  }
+
+  .aside-two {
+    margin-top: 10px;
+    order: 4;
+  }
+
+  footer {
+    padding: 20px;
+    margin-top: 10px;
+    order: 5;
+    font-size: 14px;
+  }
 }
