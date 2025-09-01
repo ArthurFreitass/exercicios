@@ -1,1 +1,1 @@
-# DireÂtÂÃ³rio focado em aprender ej6 e taÃÃambÃ©m testes unitÃ¡rios.
+# DiretÃ³rio focado em aprender EJ6 e testes unitÃ¡rios.
