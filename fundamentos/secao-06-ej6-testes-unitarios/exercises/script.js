@@ -178,6 +178,6 @@ Caso a função findPeopleByState localize nenhuma pessoa no estado, lance uma e
   return peoples;
 };
 
-console.log(findPersonByName("Isabela Almeida"));
+console.log(findPersonByName("Rafael Ferreira"));
 console.log(findPersonByPosition(3));
 console.log(findPeopleByState("ES"));
