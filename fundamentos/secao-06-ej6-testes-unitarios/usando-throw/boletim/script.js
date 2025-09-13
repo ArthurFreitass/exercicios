@@ -67,6 +67,9 @@ const studentMedia = (name, numbers) => {
     message2.innerHTML = `A sua média é de cerca de: ${averageStudent}`;
   } catch (error) {
     message2.innerHTML = error.message;
+  } finally {
+    document.querySelector("#name-id").value = "";
+    document.querySelector("#number-id").value = "";
   }
 };
 
