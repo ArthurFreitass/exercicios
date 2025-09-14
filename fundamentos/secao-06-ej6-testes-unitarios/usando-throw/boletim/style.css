@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 50px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  background-color: rgb(20, 127, 177);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 22px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+  height: 26px;
+}

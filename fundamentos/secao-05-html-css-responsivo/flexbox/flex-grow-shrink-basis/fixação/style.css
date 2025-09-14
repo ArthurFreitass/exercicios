@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  height: 50px;
+  margin: auto;
+  width: 100%;
+  border: solid 2px crimson;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.one {
+  background-color: #fbd26a;
+  display: flex;
+  /* Altere a propriedade grow. */
+  flex-basis: 500px;
+  list-style: none;
+  flex-shrink: 1;
+}
+
+.two {
+  background-color: #faa488;
+  display: flex;
+  /* Altere a propriedade grow. */
+  flex-basis: 500px;
+  list-style: none;
+  flex-shrink: 1;
+}
+
+.three {
+  background-color: #9069ef;
+  display: flex;
+  /* Altere a propriedade grow. */
+  flex-basis: 500px;
+  flex-shrink: 1;
+  list-style: none;
+}
+
+.four {
+  background-color: #006472;
+  display: flex;
+  flex-basis: 500px;
+  flex-shrink: 1;
+  /* Altere a propriedade grow. */
+  list-style: none;
+}

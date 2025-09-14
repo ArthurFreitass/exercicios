@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-pai {
+  border: solid 2px rgb(0, 0, 0);
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.box {
+  border-radius: 6px;
+  border: solid 2px black;
+}
+
+.box:nth-child(1) {
+  order: 3;
+  background-color: crimson;
+}
+.box:nth-child(2) {
+  order: 1;
+  background-color: aquamarine;
+}
+.box:nth-child(3) {
+  order: 2;
+  background-color: green;
+}
+
+/*Aplicando propriedades flex-items*/
+
+.container-pai h1 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+/*Usando só flex*
+flex-grow:
+flex-shrink:
+flex-basis:/
+*/
+.container-pai .box:nth-child(1) {
+  flex: 0 100px;
+}

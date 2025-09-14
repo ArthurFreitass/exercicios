@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+}
+
+#header {
+  background: #ccc;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#navigation {
+  width: 100%;
+  background: #333;
+}
+
+#navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: flex;
+}
+
+#navigation li a {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+#navigation li a:hover {
+  background: rgb(168, 98, 41);
+}
+
+#content-container {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#content {
+  width: 60%;
+  padding: 20px 0;
+  margin: 0 0 0 4%;
+}
+
+#content h2 {
+  margin: 0;
+}
+
+#aside {
+  width: 33%;
+  padding: 20px 0;
+  margin: 0 3% 0 0;
+}
+
+#aside h3 {
+  margin: 5px;
+}
+
+#footer {
+  background: #ccc;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+
+/*Layout de impressão*/
+
+/*Layout para uma tela pequena 240x320*/
+
+/*O elemento id='aside' deve desaparecer.
+As imagens não devem exceder a largura da tela.
+Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha.
+O elemento id header deve ser fixo, de forma que fique aparecendo sempre no topo da tela, mesmo após a pessoa usuária rolar a página.*/
+
+@media screen and (max-width: 240px) and (max-height: 320px) {
+  #aside {
+    display: none;
+  }
+
+  #content-container {
+    width: 100%;
+  }
+
+  img {
+    width: 97%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  #navigation {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 240px;
+  }
+
+  #navigation ul {
+    width: 97%;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer {
+    text-align: center;
+    width: 100%;
+    max-width: 150px;
+    font-size: medium;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #header h1 {
+    font-size: medium;
+  }
+}
