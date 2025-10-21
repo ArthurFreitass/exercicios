@@ -6,6 +6,9 @@ const {
   biggestNumber,
   reverseString,
   countCharacter,
+  checkNumber,
+  emptyString,
+  verifyindexArray,
 } = require("./script");
 
 // Aplicando os devidos testes
@@ -27,3 +30,15 @@ describe("Testa se os retornos das funções é correto", () => {
     expect(7).toBe(countCharacter("no-code"));
   });
 });
+
+describe("Testa se as mensagens de erro estão corretas", () => {
+    test("Checa se checkValue retorna: Type one number", () => {
+        expect(() => checkNumber("Wesley quer todos homens negões").toThrow("Type one number"))
+    })
+    test("Checa se emptyString retorna: Type one character", () => {
+        expect(() => emptyString("").toThrow("Type one character"))
+    })
+    test("Checa se verifyindexArray retorna: Type two or more characters", () => {
+        expect(() => verifyindexArray("a").toThrow("Type two or more characters"))
+    })
+})
